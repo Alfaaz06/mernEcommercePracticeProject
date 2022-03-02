@@ -1,0 +1,13 @@
+.MultiStepConnector-line {
+    display: none !important;
+}
+
+.MultiStepConnector-root {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+.MultiStepConnector-active,
+.MultiStepConnector-completed {
+    background-color: tomato;
+}

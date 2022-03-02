@@ -1,0 +1,75 @@
+.updateProductForm {
+    margin: 5vmax 0;
+    padding: 2vmax;
+    background-color: white;
+}
+
+.updateProductForm>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.updateProductForm>div>select {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    margin: 1vmax 3vmax;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax "Roboto";
+    outline: none;
+}
+
+.updateProductForm>div>svg {
+    position: absolute;
+    transform: translateX(4vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+#updateProductBtn {
+    background-color: tomato;
+    color: white;
+    font: 300 0.9vmax "Roboto";
+    width: 100%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+}
+
+@media screen and (max-width:900px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    .newProductContainer {
+        border-left: none;
+    }
+    .updateProductForm {
+        width: 90%;
+    }
+    .updateProductForm>div>input,
+    .updateProductForm>div>select,
+    .updateProductForm>div>textarea {
+        padding: 2.5vmax 5vmax;
+        font: 300 1.7vmax "Roboto";
+        width: 100%;
+    }
+    .updateProductForm>div>svg {
+        font-size: 2.8vmax;
+    }
+    .updateProductForm>a {
+        font: 500 1.8vmax "Roboto";
+    }
+    #updateProductFormFile>img {
+        width: 8vmax;
+        height: 8vmax;
+    }
+    #updateProductFromFile>input::-webkit-file-upload-button {
+        height: 7vh;
+        font: 400 1.8vmax "Roboto";
+    }
+}

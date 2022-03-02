@@ -1,0 +1,25 @@
+.PageNotFound {
+    height: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: tomato;
+    flex-direction: column;
+}
+
+.ErrorHeader {
+    padding: 2rem;
+    font: 300 4vmax "Roboto";
+}
+
+.ToPage {
+    background-color: tomato;
+    color: white;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font: 300 1vmax "Roboto";
+}

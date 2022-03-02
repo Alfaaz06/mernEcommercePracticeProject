@@ -1,0 +1,23 @@
+.container1 {
+    height: 100vmin;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.container1>h1 {
+    font: 600 2vmax "Roboto";
+}
+
+.contactData {
+    display: flex;
+}
+
+.contactData>img {
+    height: 5vmax;
+    width: 5vmax;
+    padding: 5px;
+}

@@ -1,0 +1,117 @@
+.orderDetailPage {
+    background-color: white;
+}
+
+.h1 {
+    font: 300 3vmax "Roboto";
+    margin: 4vmax 0;
+    color: tomato;
+}
+
+.orderDetailContainer {
+    padding: 5vmax;
+    padding-bottom: 0%;
+}
+
+.orderDetailContainer>p {
+    font: 400 1.8vmax "Roboto";
+}
+
+.orderDetailContainerBox,
+.orderDetailCartItemContainer {
+    margin: 2vmax;
+}
+
+.orderDetailContainerBox>div {
+    margin: 1vmax 0;
+    display: flex;
+}
+
+.orderDetailContainerBox>div>p {
+    font: 400 1vmax "Roboto";
+    color: black;
+}
+
+.orderDetailContainerBox>div>span {
+    font: 100 1vmax "Roboto";
+    color: tomato;
+    padding-left: 0.5vmax;
+}
+
+.orderDetailCartItem>p {
+    font: 400 1.8vmax "Roboto";
+}
+
+.orderDetailCartItem {
+    padding: 5vmax;
+    padding-top: 2vmax;
+}
+
+.orderDetailCartItemContainer {
+    max-height: 20vmax;
+    overflow-y: auto;
+}
+
+.orderDetailCartItemContainer>div {
+    display: flex;
+    font: 400 1vmax "Roboto";
+    /* align-items: center;
+    justify-content: center; */
+    /* margin: 2vmax 0; */
+}
+
+.orderDetailCartItemContainer>div>img {
+    width: 6vmax;
+}
+
+.orderDetailCartItemContainer>div>a {
+    color: black;
+    margin: 1vmax;
+    width: 60%;
+    text-decoration: none;
+}
+
+.orderDetailCartItemContainer>div>span {
+    font: 100 1vmax "Roboto";
+    color: tomato;
+}
+
+@media screen and (max-width:800px) {
+    .orderDetailPage {
+        grid-template-columns: 1fr;
+        height: unset;
+    }
+    .orderDetailPage>div:last-child {
+        border-left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.247);
+    }
+    .orderDetailShippingArea>p {
+        font: 400 6vw "Roboto";
+    }
+    .orderDetailContainerBox>div {
+        display: flex;
+        margin: 6vw 0;
+    }
+    .orderDetailContainerBox>div>p,
+    .orderDetailContainerBox>div>span,
+    .orderDetailCartItem>p {
+        font: 400 4vw "Roboto";
+    }
+    .orderDetailCartItem>p,
+    .orderDetailContainerBox>div>span {
+        font: 100 4vw "Roboto";
+    }
+    .orderDetailCartItemContainer {
+        max-height: 50vw;
+    }
+    .orderDetailCartItemContainer>div {
+        font: 400 4vw "Roboto";
+        margin: 4vw 0;
+    }
+    .orderDetailCartItemContainer>div>img {
+        width: 10vw;
+    }
+    .orderDetailCartItemContainer>div>span {
+        font: 100 4vw "Roboto";
+    }
+}

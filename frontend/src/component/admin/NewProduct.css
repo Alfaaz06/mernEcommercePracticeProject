@@ -1,0 +1,153 @@
+.newProductContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.newProductContainer h1 {
+    color: black;
+    font: 300 2rem "Roboto";
+    text-align: center;
+}
+
+.createProductForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    justify-content: space-evenly;
+    /* height: 70%; */
+    transition: all 0.5s;
+    width: 50%;
+}
+
+.createProductForm>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.createProductForm>div>input,
+.createProductForm>div>select,
+.createProductForm>div>textarea {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    margin: 1vmax 3vmax;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax "Roboto";
+    outline: none;
+}
+
+.createProductForm>div>svg {
+    position: absolute;
+    transform: translateX(4vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+.createProductForm>a {
+    color: rgba(0, 0, 0, 0.761);
+    align-self: flex-end;
+    transition: all 0.5s;
+    font: 500 0.8vmax "Roboto";
+    text-decoration: none;
+    font-size: 1vmax;
+}
+
+.createProductForm>a:hover {
+    color: tomato;
+}
+
+#createProductFormImage>img {
+    width: 10vmax;
+    margin: 0 2px;
+}
+
+#createProductFormImage {
+    width: 100%;
+    overflow: auto;
+}
+
+#createProductFromFile>input {
+    display: flex;
+    padding: 0%;
+    width: 100%;
+    outline: none;
+    border: 1px solid tomato;
+    border-radius: 6px;
+}
+
+#createProductFromFile>input::-webkit-file-upload-button {
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    font: 400 0.8 vmax "Roboto";
+    transition: all 0.5s;
+    padding: 0.1vmax;
+    color: tomato;
+    background-color: white;
+    margin: 0%;
+}
+
+#createProductFromFile>input::-webkit-file-upload-button:hover {
+    color: white;
+    background-color: tomato;
+}
+
+#createProductBtn {
+    background-color: tomato;
+    color: white;
+    font: 300 0.9vmax "Roboto";
+    width: 40%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+}
+
+@media screen and (max-width:900px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    .newProductContainer {
+        border-left: none;
+    }
+    .createProductForm {
+        width: 90%;
+    }
+    .createProductForm>div>input,
+    .createProductForm>div>select,
+    .createProductForm>div>textarea {
+        padding: 2.5vmax 5vmax;
+        font: 300 1.7vmax "Roboto";
+        width: 100%;
+    }
+    .createProductForm>div>svg {
+        font-size: 2.8vmax;
+    }
+    .createProductForm>a {
+        font: 500 1.8vmax "Roboto";
+    }
+    #createProductFormFile>img {
+        width: 8vmax;
+        height: 8vmax;
+    }
+    #createProductFromFile>input::-webkit-file-upload-button {
+        height: 7vh;
+        font: 400 1.8vmax "Roboto";
+    }
+}

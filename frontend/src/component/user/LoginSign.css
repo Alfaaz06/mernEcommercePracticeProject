@@ -1,0 +1,220 @@
+.loginSignUp {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.loginSignupBox {
+    background-color: white;
+    width: 60vw;
+    height: 70vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: rgba(3, 2, 2, 0.226);
+    border-radius: 5px;
+}
+
+.login_sign_toggle {
+    display: flex;
+    height: 3vmax;
+}
+
+.login_sign_toggle>p {
+    color: rgba(0, 0, 0, 0.678);
+    font: 300 1.5vmax "Roboto";
+    transition: all 0.5s;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.login_sign_toggle>p:hover {
+    color: tomato;
+}
+
+.loginSignupBox>div>button {
+    background-color: tomato;
+    height: 3px;
+    width: 50%;
+    border: none;
+    transition: all 0.5s;
+}
+
+.loginForm,
+.SignUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 2vmax;
+    height: 70%;
+    transition: all 0.5s;
+}
+
+.SignUpForm {
+    transform: translateY(-100%) translateX(-100%);
+}
+
+.loginForm>div,
+.SignUpForm>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.loginForm>div>input,
+.SignUpForm>div>input {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 90%;
+    margin-left: 3vmax;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax "Roboto";
+    outline: none;
+}
+
+.loginForm>div>svg,
+.SignUpForm>div>svg {
+    position: absolute;
+    transform: translateX(4vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+.loginForm>a {
+    color: rgba(0, 0, 0, 0.761);
+    align-self: flex-end;
+    transition: all 0.5s;
+    font: 500 0.8vmax "Roboto";
+    text-decoration: none;
+    font-size: 1vmax;
+}
+
+.loginForm>a:hover {
+    color: tomato;
+}
+
+#registerImage>img {
+    width: 5vmax;
+    height: 5vmax;
+    border-radius: 2.5vmax;
+    margin-left: 20%;
+}
+
+#registerImage>input {
+    display: flex;
+    padding: 0%;
+    width: 40%;
+    margin-left: 5px;
+    outline: none;
+    border: 1px solid tomato;
+    border-radius: 6px;
+}
+
+#registerImage>input::-webkit-file-upload-button {
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    font: 400 0.8 vmax "Roboto";
+    transition: all 0.5s;
+    padding: 0.1vmax;
+    color: tomato;
+    background-color: white;
+    margin: 0%;
+}
+
+#registerImage>input::-webkit-file-upload-button:hover {
+    color: white;
+    background-color: tomato;
+}
+
+.signupbtn,
+.loginbtn {
+    border: 1px solid tomato;
+    background-color: tomato;
+    color: white;
+    font: 300 0.9vmax "Roboto";
+    width: 40%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+}
+
+.loginbtn:hover,
+.signupbtn:hover {
+    background-color: white;
+    color: tomato;
+    border: 1px solid tomato;
+}
+
+.shiftToLeft {
+    transform: translateX(-100%);
+}
+
+.shiftToNeutral {
+    transform: translateX(0%);
+}
+
+.shiftToNeutralForm {
+    transform: translateX(0%) translateY(-100%);
+}
+
+.shiftToRight {
+    transform: translateX(100%);
+}
+
+@media screen and (max-width:900px) {
+    .loginSignupBox {
+        width: 95vw;
+        height: 95vh;
+    }
+    .login_sign_toggle {
+        height: 5vmax;
+    }
+    .login_sign_toggle>p {
+        font: 300 1.5vmax "Roboto";
+    }
+    .loginForm,
+    .SignUpForm {
+        padding: 5vmax;
+    }
+    .loginForm>div>input,
+    .SignUpForm>div>input {
+        padding: 2.5vmax 5vmax;
+        font: 300 1.7vmax "Roboto";
+        width: 100%;
+    }
+    .loginForm>div>svg,
+    .SignUpForm>div>svg {
+        font-size: 2.8vmax;
+    }
+    .loginForm>a {
+        font: 500 1.8vmax "Roboto";
+    }
+    #registerImage>img {
+        width: 8vmax;
+        height: 8vmax;
+        border-radius: 4vmax;
+    }
+    #registerImage>input::-webkit-file-upload-button {
+        height: 7vh;
+        font: 400 1.8vmax "Roboto";
+    }
+}
